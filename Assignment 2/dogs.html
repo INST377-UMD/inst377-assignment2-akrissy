@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dogs</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+</head>
+<body>
+  <nav>
+    <ul class="navbar">
+      <li onclick="navigateTo('index')">Home</li>
+      <li onclick="navigateTo('stocks')">Stocks</li>
+      <li onclick="navigateTo('dogs')">Dogs</li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Dog Breeds</h2>
+    <div class="glider-contain">
+        <div class="glider" id="carousel"></div>
+        <button aria-label="Previous" class="glider-prev">«</button>
+        <button aria-label="Next" class="glider-next">»</button>
+        <div role="tablist" class="dots"></div>
+    </div>      
+    <div id="breed-buttons"></div>
+    <div id="breed-info"></div>
+  </main>
+
+  <div id="audio-controls">
+    <p>Say: "Load Dog Breed Labrador"</p>
+    <button onclick="startListening()">Turn On Audio</button>
+    <button onclick="stopListening()">Turn Off Audio</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="script.js"></script>
+  <script src="dogs.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+</body>
+</html>
